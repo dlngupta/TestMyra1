@@ -1,0 +1,18 @@
+<main>
+    <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+        <div class="form_div">
+            <label>Login:</label>
+            <input class="field_class" name="login_txt" type="text" [(ngModel)]="userName" placeholder="Enter User name" >
+            <span style="color: red;" *ngIf="!userName && loginClicked">Username Required</span><br/>
+            <label>Password:</label>
+            
+            <input id="pass" class="field_class" name="password_txt" [(ngModel)]="passWord" type="password" placeholder="Enter password">
+            <span style="color: red;"  *ngIf="!passWord && loginClicked">Password Required</span><br/>
+            <button  type="submit" form="login_form" (click)="Login()">Login</button>
+        </div>
+        <!-- <div class="info_div">
+            <p>Already have an account <a href="register/reg-form.php">Cadastre-se!</a></p>
+        </div> -->
+    </form> 
+   
+</main>
