@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   }
   title = 'MyraSwimmingPool';
   ngOnInit(){
-this._router.navigate(['/users'])
+this._router.navigate(['/login'])
   }
   
 }
